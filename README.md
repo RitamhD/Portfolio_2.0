@@ -2,6 +2,7 @@
 # Hello, I'm a Full-Stack Developer and MLOps Engineer! 👋
 
 ## About Me
+My name is Ritam Kumar Hati.
 I'm a passionate and dedicated full-stack developer with proficiency in a wide range of tools and technologies that are crucial for full-stack web development. I also have a strong background in MLOps engineering and have worked on several projects in this field.
 
 ## Skills

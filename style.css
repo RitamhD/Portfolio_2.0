@@ -2,7 +2,6 @@ html{
     scroll-behavior:smooth;
 }
 body {
-    background-color: rgb(20, 19, 19);
     color: white;
     height: 100vh;
     width: 100vw;
@@ -10,6 +9,70 @@ body {
 }
 body::-webkit-scrollbar{
     display: none;
+}
+.portfolio{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    font-family:sans-serif;
+    font-size: 4rem;
+    color: black;
+    border-bottom: 2px solid;
+}
+.by_name{
+    position: absolute;
+    top: 80%;
+    width: 5rem;
+    background-color: rgba(207, 207, 18, 0.751);
+    padding: 10px;
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+.folio{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#portfolio_text>section{
+    position: absolute;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    color: black;
+}
+#web_dev{
+    rotate: -90deg;
+    top: 20%;
+}
+#ai_eng{
+    rotate: 90deg;
+    left: 80%;
+    top: 20%;
+}
+#start{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    padding: 1rem 1rem;
+    background-color: rgb(20, 19, 19);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+#start:hover{
+    background-color: rgb(52, 50, 50);
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.start_clicked{
+    transform: scale(100);
+    transition: 0.5s;
+    /* border-radius: 50%; */
+}
+#content{
+    display: none;
+}
+main{
+    cursor: default;
+    margin: 5rem;
 }
 
 nav {

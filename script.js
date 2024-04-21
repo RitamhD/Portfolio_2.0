@@ -31,7 +31,7 @@ function hideStartContent(){
   document.querySelector('.portfolio').style.display = 'none';
   document.getElementById('content').style.display = 'block';
   // document.querySelector('.portfolio_textSection').style.display = 'none';
-  document.body.style.backgroundColor = 'rgb(20, 19, 19)';
+    document.body.style.background = 'rgb(20, 19, 19)';
 };
 document.getElementById('')
 

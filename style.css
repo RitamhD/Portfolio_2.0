@@ -2,6 +2,7 @@ html{
     scroll-behavior:smooth;
 }
 body {
+    background: linear-gradient(to right, white 51.5%, rgb(20, 19, 19) 50%);
     color: white;
     height: 100vh;
     width: 100vw;
@@ -31,6 +32,7 @@ body::-webkit-scrollbar{
 }
 .folio{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(2, 212, 244);
 }
 #portfolio_text>section{
     position: absolute;

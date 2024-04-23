@@ -2,7 +2,7 @@ html{
     scroll-behavior:smooth;
 }
 body {
-    background: linear-gradient(to right, white 51.5%, rgb(20, 19, 19) 50%);
+    background: linear-gradient(to right, white 10%, rgb(20, 19, 19));
     color: white;
     height: 100vh;
     width: 100vw;
@@ -20,19 +20,37 @@ body::-webkit-scrollbar{
     color: black;
     border-bottom: 2px solid;
 }
+@keyframes scale{
+    0%, 100% {transform: scale(1.2) ;}
+    50% {transform: scale(1) ;}
+}
 .by_name{
     position: absolute;
     top: 80%;
     width: 5rem;
-    background-color: rgba(207, 207, 18, 0.751);
+    background-color: rgba(235, 235, 9, 0.751);
     padding: 10px;
     margin-left: 2rem;
     font-size: 1rem;
     font-style: italic;
+    animation: scale 4s infinite;
 }
 .folio{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(2, 212, 244);
+}
+@keyframes travel{
+    0%, 100% {transform: translateX(-150px);}
+    50% {transform: translate(50px);}
+}
+.folio::before{
+    content: "";
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    top: 97%;
+    background-color: rgb(2, 212, 244);
+    animation: travel 4s infinite;
 }
 #portfolio_text>section{
     position: absolute;
@@ -49,25 +67,25 @@ body::-webkit-scrollbar{
     left: 80%;
     top: 20%;
 }
+
 #start{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 45%;
     padding: 1rem 1rem;
     background-color: rgb(20, 19, 19);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+    border-radius: 50px;
 }
 #start:hover{
     background-color: rgb(52, 50, 50);
-    border-radius: 50px;
     transition: 0.5s;
 }
 .start_clicked{
     transform: scale(100);
-    transition: 0.5s;
-    /* border-radius: 50%; */
+    transition: 1s;
 }
 #content{
     display: none;

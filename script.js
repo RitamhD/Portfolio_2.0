@@ -33,8 +33,15 @@ function hideStartContent(){
   // document.querySelector('.portfolio_textSection').style.display = 'none';
     document.body.style.background = 'rgb(20, 19, 19)';
 };
-document.getElementById('')
+// document.getElementById('')
 
+// for(var i=-30; i<=30; i++){
+  document.querySelector('.by_name').style.rotate = Math.random();  
+// }
+// while(true){
+  // var x = '30deg';
+  // document.querySelector('.by_name').style.rotate = x;
+// }
 
 
 

@@ -1,4 +1,4 @@
-var navbarButtons = document.querySelectorAll('.nav_bar a');
+let navbarButtons = document.querySelectorAll('.nav_bar a');
 
 for(var i=0; i<navbarButtons.length; i++){
         navbarButtons[i].addEventListener("mouseenter", function(){   
@@ -30,47 +30,47 @@ function hideStartContent(){
   document.getElementById('start').style.display = 'none';
   document.querySelector('.portfolio').style.display = 'none';
   document.getElementById('content').style.display = 'block';
-  // document.querySelector('.portfolio_textSection').style.display = 'none';
     document.body.style.background = 'rgb(20, 19, 19)';
 };
-// document.getElementById('')
 
-// for(var i=-30; i<=30; i++){
-  document.querySelector('.by_name').style.rotate = Math.random();  
-// }
-// while(true){
-  // var x = '30deg';
-  // document.querySelector('.by_name').style.rotate = x;
-// }
+let images = document.querySelectorAll('.parent img');
+let buttons = document.getElementsByClassName('button');
+let isProcessing = false;
 
+document.querySelector('.right').addEventListener("click", () => {
+    if (isProcessing) {
+        return;
+    }
+    isProcessing = true;
+    swapStyles(0, 1, 2);
+    setTimeout(function() {
+        isProcessing = false;
+    }, 500); // delay
+});
 
+document.querySelector('.left').addEventListener("click", () => {
+    if (isProcessing) {
+        return;
+    }
+    isProcessing = true;
+    swapStyles(0, 2, 1);
+    setTimeout(function() {
+        isProcessing = false;
+    }, 500); // delay
+});
 
+function swapStyles(sourceIndex, targetIndex1, targetIndex2){
+    let tempStyles = window.getComputedStyle(images[sourceIndex]);
+    let copiedStyles1 = window.getComputedStyle(images[targetIndex1]);
+    let copiedStyles2 = window.getComputedStyle(images[targetIndex2]);
 
+    copyStyles(copiedStyles1, images[sourceIndex]);
+    copyStyles(copiedStyles2, images[targetIndex1]);
+    copyStyles(tempStyles, images[targetIndex2]);
+}
 
-
-
-
-
-
-
-
-// window.onload = function() {
-//   var startButton = document.createElement('button');
-//   startButton.innerHTML = "Start";
-//   document.body.appendChild(startButton);
-
-//   startButton.addEventListener("click", function() {
-//       // Remove the start button after it's clicked
-//       document.body.removeChild(startButton);
-
-//       var navbarButtons = document.querySelectorAll('.nav_bar a');
-
-//       for(var i=0; i<navbarButtons.length; i++){
-//           navbarButtons[i].addEventListener("mouseenter", function(){   
-//               this.classList.add("a_hover");
-//               var audio = new Audio("hover_audio.mp3");
-//               audio.play();
-//           });
-//       }
-//   });
-// }
+function copyStyles(copied_styles, target_element){
+    for(let pr of copied_styles){
+        target_element.style[pr] = copied_styles[pr];
+    }
+}

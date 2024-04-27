@@ -7,6 +7,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
+    animation: back_animation 10s infinite;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -83,16 +84,16 @@ body::-webkit-scrollbar{
     background-color: rgb(52, 50, 50);
     transition: 0.5s;
 }
+@keyframes zoom {
+    from {transform: scale(.9);}
+    to {transform: scale(100);}
+}
 .start_clicked{
-    transform: scale(100);
-    transition: 1s;
+    animation: zoom 1s ;
+    transition: 5s;
 }
 #content{
     display: none;
-}
-main{
-    cursor: default;
-    margin: 5rem;
 }
 
 nav {
@@ -171,8 +172,71 @@ nav a:active{
 .contact_logos img:hover{
     box-shadow: 10px 6px 20px hsl(7, 97%, 52%);
 }
-
-
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    position: relative;
+    justify-content: center;
+    height: 500px;
+    width: 70%;
+}
+.button{
+    position: absolute;
+    top: 40%;
+    height: 0;
+    width: 0;
+    display: none;
+}
+.parent:hover{
+    .button{
+        display: block;
+        z-index: 2;
+    }
+}
+.right{
+    left: 95%;
+    border-left: 40px solid transparent;
+    border-bottom: 40px solid rgba(255, 255, 255, 0.34);
+    rotate: -45deg;
+}
+.left{
+    right: 95%;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid rgba(255, 255, 255, 0.34);
+    rotate: 45deg;
+}
+.parent img{
+    position: absolute;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.img0{
+    height: 30%;
+    width: 20%;
+    top: 30%;
+    left: 5%;
+    z-index: 0;
+    transition: 0.5s;
+}
+.img1{
+    height: 70%;
+    width: 50%;
+    top: 15%;
+    left: 25%;
+    z-index: 1;
+}
+.img2{
+    height: 30%;
+    width: 20%;
+    top: 30%;
+    right: 5%;
+    z-index: 0;
+}
 
 footer{
     margin: 80vh 1rem 0 0;

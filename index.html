@@ -7,13 +7,19 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- Front page -->
     <div>
-        <p class="portfolio">PORT<span class="folio">folio</span><span class="by_name">By~ Ritam</span></p>
+        <p class="portfolio">
+            PORT<span class="folio">folio</span><span class="by_name">~ Ritam</span>
+        </p>
         <div id="start">
             <span class="startButton">Click to view</span>
         </div>
     </div>
+
+    <!-- Inside Portfolio -->
     <div id="content">
+        <!-- Navbar -->
         <header>
             <nav class="nav_bar">
                 <a href="#">Home</a>
@@ -21,29 +27,40 @@
                 <a href="#" id="contact">Contact</a>
             </nav>
         </header>
+        <!-- Contact logos -->
         <section class="contact_logos">
-        <a href="https://www.github.com" target="_blank"><img class="logo github" src="github.svg" title="Github" alt="github logo"></a>
-        <a href="#" target="_blank"><img class="logo linkedin" src="linkedin.svg" title="Linked-in" alt="linked-in logo"></a>
+            <a href="https://www.github.com" target="_blank">
+                <img class="logo github" src="./resources/github.svg" title="Github" alt="github logo">
+            </a>
+            <a href="#" target="_blank">
+                <img class="logo linkedin" src="./resources/linkedin.svg" title="Linked-in" alt="linkedin logo">
+            </a>
         </section>
+        <!-- Main body start -->
         <main>
-            <div class="parent">
+            <div id="carousel">
                 <div class="button right"></div>
                 <div class="button left"></div>
-                <div>
-                    <img class="img0" src="./IMG20230725174045.jpg">
+                <div class="carousel_img">
+                    <img class="img0" src="./resources/IMG20230725174045.jpg" alt="Image 1">
+                    <section id="img_desc0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, dolorem!</section>
                 </div>
-                <div>
-                    <img class="img1" src="./IMG_20230204_212147.jpg">
+                <div class="carousel_img">
+                    <img class="img1" src="./resources/IMG_20230204_212147.jpg" alt="Image 2">
+                    <section id="img_desc1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, libero?</section>
                 </div>
-                <div>
-                    <img class="img2" src="https://images.unsplash.com/photo-1465859717639-b78b238adcf8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXw0MTAzMjV8fGVufDB8fHx8fA%3D%3D">
+                <div class="carousel_img">
+                    <img class="img2" src="./resources/IMG_20230204_212147.jpg" alt="Image 3">
+                    <section id="img_desc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, iste!</section>
                 </div>
             </div>
         </main>
+
         <footer>
             Terms & Conditions applied.
         </footer>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

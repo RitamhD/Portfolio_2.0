@@ -1,50 +1,51 @@
-html{
-    scroll-behavior:smooth;
+/* General Styles */
+html {
+    scroll-behavior: smooth;
 }
+
 body {
-    background: linear-gradient(to right, white 10%, rgb(20, 19, 19));
-    color: white;
+    color: whitesmoke;
     height: 100vh;
     width: 100vw;
     margin: 0;
-    animation: back_animation 10s infinite;
+    background: radial-gradient(circle at center, rgb(52, 50, 50), transparent 20%);
+    background-size: 70% 70%;
+    background-position: center center;
+    animation: back_animation 3s forwards;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     display: none;
 }
-.portfolio{
+
+/* Portfolio Section */
+.portfolio {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 40%;
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-size: 4rem;
     color: black;
     border-bottom: 2px solid;
 }
-@keyframes scale{
-    0%, 100% {transform: scale(1.2) ;}
-    50% {transform: scale(1) ;}
-}
-.by_name{
+
+.by_name {
     position: absolute;
     top: 80%;
     width: 5rem;
-    background-color: rgba(235, 235, 9, 0.751);
     padding: 10px;
     margin-left: 2rem;
-    font-size: 1rem;
+    font-size: large;
     font-style: italic;
-    animation: scale 4s infinite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.folio{
+
+.folio {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(2, 212, 244);
 }
-@keyframes travel{
-    0%, 100% {transform: translateX(-150px);}
-    50% {transform: translate(50px);}
-}
-.folio::before{
+
+.folio::before {
     content: "";
     width: 50px;
     height: 5px;
@@ -53,49 +54,58 @@ body::-webkit-scrollbar{
     background-color: rgb(2, 212, 244);
     animation: travel 4s infinite;
 }
-#portfolio_text>section{
-    position: absolute;
-    font-size: 3rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
-    color: black;
-}
-#web_dev{
-    rotate: -90deg;
-    top: 20%;
-}
-#ai_eng{
-    rotate: 90deg;
-    left: 80%;
-    top: 20%;
+
+@keyframes travel {
+    0%, 100% {
+        transform: translateX(-150px);
+    }
+    50% {
+        transform: translate(50px);
+    }
 }
 
-#start{
+/* Start Button */
+#start {
     position: absolute;
     top: 50%;
-    left: 45%;
-    padding: 1rem 1rem;
-    background-color: rgb(20, 19, 19);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background-color: transparent;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-#start:hover{
+
+#start:hover {
+    color: rgb(2, 212, 244);
     background-color: rgb(52, 50, 50);
-    transition: 0.5s;
+    transition: 2s;
 }
-@keyframes zoom {
-    from {transform: scale(.9);}
-    to {transform: scale(100);}
-}
-.start_clicked{
-    animation: zoom 1s ;
+
+.start_clicked {
+    animation: zoom 2s;
     transition: 5s;
 }
-#content{
+
+@keyframes zoom {
+    from { transform: scale(0); }
+    to { transform: scale(100); }
+}
+
+/* Content Section */
+#content {
     display: none;
 }
 
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
@@ -109,11 +119,11 @@ nav a {
     opacity: 0.4;
     text-decoration: none;
     font-size: large;
-    font-family:'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     transition: 0.4s ease-in-out;
 }
 
-.a_hover {
+nav a:hover {
     opacity: 0.9;
 }
 
@@ -126,7 +136,8 @@ nav a::before {
     left: -0.5rem;
     transition: 0.4s;
 }
-nav a:hover::before{
+
+nav a:hover::before {
     height: 170%;
 }
 
@@ -140,82 +151,97 @@ nav a::after {
     right: 0;
     transition: 0.4s;
 }
+
 nav a:hover::after {
     width: 150%;
 }
-nav a:active{
+
+nav a:active {
     transform: scale(1.3);
 }
 
-.contact_logos{
+/* Contact Logos Section */
+.contact_logos {
     display: grid;
     margin-left: 120vw;
     gap: 1rem;
 }
-.contact_logos img{
+
+.contact_logos img {
     filter: invert();
     height: 1.5rem;
     margin-right: 1rem;
     cursor: pointer;
 }
-.contact_logos_clicked{
+
+.contact_logos_clicked {
     margin-left: 95vw;
     transition: 0.5s;
 }
-.contact_logos img:active{
+
+.contact_logos img:active {
     transform: scale(1.3);
     transition: 0.4s;
 }
-.github{
-    border-radius: 50px;
-}
-.contact_logos img:hover{
+
+.contact_logos img:hover {
     box-shadow: 10px 6px 20px hsl(7, 97%, 52%);
 }
-main{
+
+.github {
+    border-radius: 50px;
+}
+
+/* Carousel Section */
+main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10%;
     justify-content: center;
     align-items: center;
 }
-.parent{
+
+#carousel {
     position: relative;
     justify-content: center;
     height: 500px;
     width: 70%;
 }
-.button{
+
+.button {
     position: absolute;
     top: 40%;
     height: 0;
     width: 0;
     display: none;
 }
-.parent:hover{
-    .button{
-        display: block;
-        z-index: 2;
-    }
+
+#carousel:hover .button {
+    display: block;
+    z-index: 2;
 }
-.right{
+
+.right {
     left: 95%;
     border-left: 40px solid transparent;
     border-bottom: 40px solid rgba(255, 255, 255, 0.34);
-    rotate: -45deg;
+    transform: rotate(-45deg);
 }
-.left{
+
+.left {
     right: 95%;
     border-right: 40px solid transparent;
     border-bottom: 40px solid rgba(255, 255, 255, 0.34);
-    rotate: 45deg;
+    transform: rotate(45deg);
 }
-.parent img{
+
+#carousel img {
     position: absolute;
     transition: 0.5s;
     object-fit: cover;
 }
-.img0{
+
+.img0 {
     height: 30%;
     width: 20%;
     top: 30%;
@@ -223,14 +249,16 @@ main{
     z-index: 0;
     transition: 0.5s;
 }
-.img1{
+
+.img1 {
     height: 70%;
     width: 50%;
     top: 15%;
     left: 25%;
     z-index: 1;
 }
-.img2{
+
+.img2 {
     height: 30%;
     width: 20%;
     top: 30%;
@@ -238,7 +266,22 @@ main{
     z-index: 0;
 }
 
-footer{
+#carousel section {
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+#carousel img:hover ~ section {
+    opacity: 1;
+    visibility: visible;
+    left: 50%;
+}
+
+/* Footer */
+footer {
     margin: 80vh 1rem 0 0;
     text-align: end;
 }

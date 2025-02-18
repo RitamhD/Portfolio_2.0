@@ -10,12 +10,7 @@ for(var i=0; i<navbarButtons.length; i++){
         this.classList.remove("a_hover");
     });
 }
-document.querySelectorAll('a').forEach(link => {
-    link.addEventListener("click", function() {
-      var audio = new Audio("mouse_click2.mp3")
-      audio.play();
-    });
-  });
+
 //Contact Logos:- 
 document.querySelector('#contact').addEventListener("click", function(){
     document.querySelector('.contact_logos').classList.add('contact_logos_clicked');
@@ -32,6 +27,7 @@ function hideStartContent(){
   document.getElementById('content').style.display = 'block';
     document.body.style.background = 'rgb(20, 19, 19)';
 };
+
 //Carousel Images:-
 let images = document.querySelectorAll('#carousel img');
 let buttons = document.getElementsByClassName('button');
@@ -71,11 +67,3 @@ function copyStyles(copied_styles, target_element){
         target_element.style[pr] = copied_styles[pr];
     }
 }
-
-// let carouselImages = document.querySelectorAll('.carousel_img');
-// for(var i=0; i<carouselImages.length; i++){
-//     carouselImages[i].addEventListener("mouseover", function(){
-//         console.log(this.lastElementChild);
-//         this.lastElementChild.classList.add('onHover');
-//     })
-// }

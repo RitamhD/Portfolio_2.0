@@ -10,6 +10,7 @@ document.getElementById('start').addEventListener('animationend', function () {
     
     // Once the animation ends, hide & remove the landing page
     landingPage.style.display = 'none';
+    document.querySelector('body').style.background = 'none'
     landingPage.remove();
     
     // Now show the content
@@ -17,8 +18,6 @@ document.getElementById('start').addEventListener('animationend', function () {
     content.style.display = 'block';
     document.body.style.backgroundColor = 'rgb(20, 19, 19)';
 });
-
-
 
 //Navbar:-
 let navbarButtons = document.querySelectorAll('.nav_bar a');
@@ -31,47 +30,46 @@ for(var i=0; i<navbarButtons.length; i++){
     });
 }
 
-//Contact Logos:- 
-document.querySelector('#contact').addEventListener("click", function(){
-    document.querySelector('.contact_logos').classList.add('contact_logos_clicked');
-});  
+document.querySelectorAll('nav#navbar a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1); // Get the section ID
+        const targetSection = document.getElementById(targetId); // Get the target section element
 
-//Carousel Images:-
-let images = document.querySelectorAll('#carousel img');
-let buttons = document.getElementsByClassName('button');
-let isProcessing = false;
-
-document.querySelector('.right').addEventListener("click", () => {
-    if (isProcessing) {
-        return;
-    }
-    isProcessing = true;
-    swapStyles(0, 1, 2);
-    setTimeout(function() {
-        isProcessing = false;
-    }, 500); // delay
+        targetSection.scrollIntoView({
+            behavior: 'smooth', // Smooth scroll
+            block: 'start' // Scroll to the top of the section
+        });
+    });
 });
-document.querySelector('.left').addEventListener("click", () => {
-    if (isProcessing) {
-        return;
-    }
-    isProcessing = true;
-    swapStyles(0, 2, 1);
-    setTimeout(function() {
-        isProcessing = false;
-    }, 500); // delay
-});
-function swapStyles(sourceIndex, targetIndex1, targetIndex2){
-    let tempStyles = window.getComputedStyle(images[sourceIndex]);
-    let copiedStyles1 = window.getComputedStyle(images[targetIndex1]);
-    let copiedStyles2 = window.getComputedStyle(images[targetIndex2]);
 
-    copyStyles(copiedStyles1, images[sourceIndex]);
-    copyStyles(copiedStyles2, images[targetIndex1]);
-    copyStyles(tempStyles, images[targetIndex2]);
-}
-function copyStyles(copied_styles, target_element){
-    for(let pr of copied_styles){
-        target_element.style[pr] = copied_styles[pr];
-    }
-}
+document.getElementById('contact').addEventListener('click', function() {
+    const targetSection = document.getElementById('footer'); // Target the section you want to scroll to
+    targetSection.scrollIntoView({
+        behavior: 'smooth', // Smooth scroll
+        block: 'start' // Scroll to the top of the section
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Select the specific sections for animation
+    const sectionsToAnimate = document.querySelectorAll('#technologies, #projects');
+
+    // Create an IntersectionObserver to observe when the sections come into view
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Add visible class when section is in view
+                observer.unobserve(entry.target); // Stop observing once section is visible
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the section is visible
+    });
+
+    // Start observing the sections
+    sectionsToAnimate.forEach(section => {
+        observer.observe(section);
+    });
+});

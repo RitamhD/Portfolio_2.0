@@ -23,14 +23,10 @@ img {
 body {
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
     color: whitesmoke;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at center, rgb(20, 19, 19), transparent 20%);
-    background-size: 70% 70%;
-    background-position: center center;
 }
 
 body::-webkit-scrollbar {
@@ -41,22 +37,22 @@ body::-webkit-scrollbar {
 .portfolio {
     position: absolute;
     top: 10%;
-    left: 40%;
+    left: 35%;
     font-family: sans-serif;
     font-size: 4rem;
     color: black;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
 }
 
 .by_name {
-    position: absolute;
-    top: 80%;
-    width: 5rem;
-    padding: 10px;
+    /* top: 80%; */
+    /* width: 100px; */
+    /* padding: 10px; */
     margin-left: 2rem;
-    font-size: large;
+    border-bottom: 0px;
+    font-size: x-large;
     font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Austin", Georgia, "Times New Roman", "source-han-serif-tc", "source-han-serif-sc", "FangSong";
 }
 
 .folio {
@@ -90,8 +86,8 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
-    background-color: transparent;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.135);
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     border-radius: 50%;
@@ -102,11 +98,20 @@ body::-webkit-scrollbar {
     align-items: center;
     text-align: center;
 }
+#start img{
+    background-color: transparent;
+    filter: none;
+}
 
 #start:hover {
-    color: rgb(2, 212, 244);
+    /* color: rgb(2, 212, 244); */
     background-color: rgb(52, 50, 50);
-    transition: 2s;
+    transition: 1s;
+}
+
+#start:hover img{
+    filter: invert(100);
+    transform: 0.1s;
 }
 
 .start_clicked {
@@ -157,20 +162,6 @@ header {
     }
 }
 
-#technologies, #projects {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-#technologies.visible, #projects.visible {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    transform: translateY(0);
-}
-
 
 #cv_button {
     height: 50px;
@@ -181,12 +172,12 @@ header {
 
 /* Navigation Bar */    
 #nav_bar {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Black fading from top to bottom */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     position: fixed;
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 15rem;
+    gap: 10rem;
     padding: 2rem 0;
     z-index: 5;
 }
@@ -194,7 +185,7 @@ header {
 #nav_bar a {
     position: relative;
     color: rgb(255, 255, 255);
-    opacity: 0.5;
+    opacity: 0.7;
     font-size: large;
     transition: 0.4s ease-in-out;
 }
@@ -446,8 +437,28 @@ footer {
     width: 50px;
 }
 
+#technologies, #projects {
+    opacity: 0;
+    display: grid;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-/* #contact_details div:not(:last-child) {
-    border-right: 1px solid #ccc;
-} */
+#technologies.visible, #projects.visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: translateY(0);
+}
 
+#python_logo, #fastapi_logo, #pytorch_logo, #ollama_logo {
+    height: 8rem;
+    width: 8rem;
+    filter: none;
+}
+#flask_logo, #huggingFace_logo {
+    height: 10rem;
+    width: 10rem;
+    filter: invert(100);
+}

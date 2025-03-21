@@ -10,7 +10,7 @@ document.getElementById('start').addEventListener('animationend', function () {
     
     // Once the animation ends, hide & remove the landing page
     landingPage.style.display = 'none';
-    document.querySelector('body').style.background = 'none'
+    // document.querySelector('body').style.background = 'none'
     landingPage.remove();
     
     // Now show the content
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0.5 // Trigger when 10% of the section is visible
+        threshold: 0.2 // Trigger when 50% of the section is visible
     });
 
     // Start observing the sections

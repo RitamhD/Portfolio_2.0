@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
     font-family: 'Trebuchet MS', sans-serif;
 }
 
-header {
+#content header {
     animation: fadeInUpHeader 1s;
 }
 
@@ -359,8 +359,8 @@ main section {
 #my_photo img{
     filter: none;
     border-radius: 20px;
-    height: 70%;
-    width: 80%;
+    height: 65%;
+    width: 90%;
 }
 
 #my_photo h2{
@@ -462,3 +462,110 @@ footer {
     width: 10rem;
     filter: invert(100);
 }
+
+#projects .content {
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 equal columns */
+    grid-template-rows: 0.1fr repeat(2, 2fr);    /* 3 equal rows */
+    gap: 20px;
+    text-align: center;
+}
+
+#projects .content h1 {
+    grid-column: span 2;
+    grid-row: span 1;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+.proj {
+    display: grid;
+    grid-template-rows: 1fr 0.2fr;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.7s ease-in-out;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.proj:not(:hover) {
+    opacity: 0.8;
+}
+
+.proj_btns {
+    /* height: 10%; */
+    width: 80%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.proj_btns button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.proj_btns button:active {
+    transform: scale(0.95); /* Shrink the button slightly */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: change background on click */
+}
+
+.proj:nth-child(2) {
+    background-image: url('resources/IMG20230725174045.jpg');
+}
+
+.proj:nth-child(3) {
+    background-image: url('resources/IMG20230725174045.jpg');
+}
+
+.proj:nth-child(4) {
+    background-image: url('resources/IMG20230725174045.jpg');
+}
+
+.proj:nth-child(5) {
+    background-image: url('resources/IMG20230725174045.jpg');
+}
+
+.proj_content {
+    position: relative;
+}
+
+.proj_content .slider {
+    position: absolute;
+    opacity: 0;
+    width: 30%;
+    right: 0;
+    visibility: hidden;
+    overflow: hidden; /* Ensures the content is hidden when the width is 0 */
+    color: black;
+    transition: opacity 1s ease-in-out, width 1s ease-in-out; /* Animate both opacity and width */
+}
+
+.proj_content:hover .slider {
+    opacity: 1;
+    visibility: visible;
+}
+
+.proj:hover .proj_btns {
+    opacity: 1;
+    visibility: visible;
+}
+

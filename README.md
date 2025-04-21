@@ -23,8 +23,7 @@ I have worked on several full-stack and MLOps projects:
    Future considerations:
    ```Integratin Agents to do automate reallife tasks``` [in progress]
 
-<h2>⚡️ Where to find me</h2>
-## Contact Me
+## ⚡️Contact Me
 <p><a target="_blank" href="https://www.linkedin.com/in/ritam-kumar-hati-aa3021254" style="display: inline-block;"><img src="https://img.shields.io/badge/linkedin-logo?style=for-the-badge&logo=linkedin&logoColor=white&color=%230a77b6" alt="linkedin" /></a></p>
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=RitamhD&show_icons=true&locale=en" alt="RitamhD" /></p>
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=RitamhD&" alt="RitamhD" /></p>

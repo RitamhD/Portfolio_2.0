@@ -11,7 +11,7 @@ I'm a developer with proficiency in a wide range of MLOps tools crucial for GEN-
 - **Database**: MySQL, SQLite
 - **Version Control**: Git, GitHub
 - **Deployment**: Docker, AWS
-- **MLOps**: PyTorch, Keras, Scikit-learn, MLflow, Kubeflow, Airflow
+- **MLOps**: PyTorch, Scikit-learn, Langchain
 
 ## Projects
 I have worked on several full-stack and MLOps projects:

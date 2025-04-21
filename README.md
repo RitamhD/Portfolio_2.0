@@ -16,7 +16,7 @@ I'm a developer with proficiency in a wide range of MLOps tools crucial for GEN-
 ## Projects
 I have worked on several full-stack and MLOps projects:
 
-1. **Infoledge**: A roadmap and course recommendation platform with integrated with additional features like Coding and Chatbots. [Visit](https://github.com/RitamhD/Infoledge){:target="_blank" rel="noopener"}
+1. **Infoledge**: A roadmap and course recommendation platform with integrated with additional features like Coding and Chatbots. [Visit](https://github.com/RitamhD/Infoledge)
 2. **Finetuning LLMs**: Finetuning LLMs to solve Leetcode problems in 2025.[in progress] 
 3. **Personal AI Assisstant**: Using Ollama and Huggingface endpoints with Langchain to develop an assistant capable for answering & reasoning queries(dynamic and real-time).
    Future considerations:

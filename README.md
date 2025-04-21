@@ -1,7 +1,7 @@
 # Portfolio_2.0
 # Hello, I'm a Python Full-Stack Developer and AI Enthusiast👋
 
-## About Me [Portfolio](https://ritam-myportfolio.netlify.app/)
+## About Me 👉[Portfolio](https://ritam-myportfolio.netlify.app/)
 My name is Ritam Kumar Hati.
 I'm a developer with proficiency in a wide range of MLOps tools crucial for GEN-AI and ML integration in full-stack applications. 
 

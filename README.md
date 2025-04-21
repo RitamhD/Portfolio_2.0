@@ -1,4 +1,4 @@
-# Portfolio_2.0
+# Portfolio
 # Hello, I'm a Python Full-Stack Developer and AI Enthusiast👋
 
 ## About Me 👉[Portfolio](https://ritam-myportfolio.netlify.app/)

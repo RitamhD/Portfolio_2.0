@@ -22,7 +22,7 @@
 <div style="display: flex; gap: 10px;">
   <img src="resources/flask-svgrepo-com.svg" alt="flask" width="50" height="50" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="fastapi" width="50" height="50" />
-  <img src="langchain.png" alt="langchain" width="50" height="50" />
+  <img src="resources/langchain.png" alt="langchain" width="50" height="50" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html5" width="50" height="50" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css3" width="50" height="50" />
 </div>

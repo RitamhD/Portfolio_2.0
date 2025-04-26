@@ -1,5 +1,5 @@
 <h1>Hi👋 I'm Ritam </h1>
-<p>A passionate Python developer and AI enthusiast</p>
+<p>Python developer and AI enthusiast</p>
 <h2>🚀 Languages and Tools I Use</h2>
 <p>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="42" height="42" />

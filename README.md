@@ -1,9 +1,9 @@
-<h1>Hi 👋, I'm Ritam </h1>
+<h1>Hi👋 I'm Ritam </h1>
 <p>A passionate Python developer and AI enthusiast</p>
 <h2>🚀 Languages and Tools I Use</h2>
 <p>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="42" height="42" />
-<img src="resources/flask-svgrepo-com.svg" alt="flask" width="42" height="42" />
+<img src="flask-svgrepo-com.svg" alt="flask" width="42" height="42" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="fastapi" width="42" height="42" />    
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="pytorch" width="42" height="42" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="42" height="42" />
@@ -24,7 +24,7 @@ I have worked on several full-stack and MLOps projects:
 2. **Finetuning LLMs**: Finetuning LLMs to solve Leetcode problems in 2025. [in progress] 
 3. **Personal AI Assisstant**: Using Ollama and Huggingface endpoints with Langchain to develop an assistant capable for answering & reasoning queries(dynamic and real-time) with speech recognition.
       - Future considerations:
-      ```Integrating Agents to automate reallife tasks``` [in progress]
+      ```Integrating Agents to automate with reallife tasks``` [in progress]
 
 ## ⚡️Contact Me
 <p><a target="_blank" href="https://www.linkedin.com/in/ritam-kumar-hati-aa3021254" style="display: inline-block;"><img src="https://img.shields.io/badge/linkedin-logo?style=for-the-badge&logo=linkedin&logoColor=white&color=%230a77b6" alt="linkedin" /></a></p>

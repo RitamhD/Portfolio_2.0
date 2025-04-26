@@ -24,7 +24,7 @@ I have worked on several full-stack and MLOps projects:
 2. **Finetuning LLMs**: Finetuning LLMs to solve Leetcode problems in 2025. [in progress] 
 3. **Personal AI Assisstant**: Using Ollama and Huggingface endpoints with Langchain to develop an assistant capable for answering & reasoning queries(dynamic and real-time) with speech recognition.
       - Future considerations:
-      ```Integratin Agents to do automate reallife tasks``` [in progress]
+      ```Integrating Agents to automate reallife tasks``` [in progress]
 
 ## ⚡️Contact Me
 <p><a target="_blank" href="https://www.linkedin.com/in/ritam-kumar-hati-aa3021254" style="display: inline-block;"><img src="https://img.shields.io/badge/linkedin-logo?style=for-the-badge&logo=linkedin&logoColor=white&color=%230a77b6" alt="linkedin" /></a></p>

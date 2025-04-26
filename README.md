@@ -3,8 +3,8 @@
 <h2>🚀 Languages and Tools I Use</h2>
 <p>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="42" height="42" />
-<img src="flask-svgrepo-com.svg" alt="python" width="42" height="42" />
-<img src="FastAPI.svg" alt="python" width="42" height="42" />      
+<img src="flask-svgrepo-com.svg" alt="flask" width="42" height="42" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="fastapi" width="42" height="42" />    
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="pytorch" width="42" height="42" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="42" height="42" />
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="42" height="42" />
